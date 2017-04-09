@@ -17,7 +17,7 @@
       font-family: "Capriola", Arial, sans-serif;
       color: #024340;
       font-size: 2.75em;
-      
+
     }
  h2 {
       font-family: "Rubik", sans-serif;
@@ -124,7 +124,7 @@
 		margin-top:20px;
 		max-width:1400px;
     }
-	
+
 	 .oppia-about-extra-info .btn  {
       background-color: #00796d;
       font-family: "Rubik", Arial, sans-serif;
@@ -142,7 +142,7 @@
     }
     .oppia-about-extra-info button:hover {
       background-color: rgba(5,190,178,1)
-    }  
+    }
     .lesson-container .btn  {
       background-color: #00796d;
       font-family: "Rubik", Arial, sans-serif;
@@ -163,28 +163,29 @@
     }
     .lesson-container {
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+      justify-content: center;
     }
     .lesson-container img {
       height: 250px;
-      width: 192px;
-    }
-    /* hack because i took a bad screenshot */
-    .lesson-container img:last-of-type {
-      transform: scale(1.01);
-      margin-top: 3px;
-		
     }
     footer {
       background: #094142;
       padding: 30px 80px;
     }
     .footer.desktop {
-     max-width: 1400px;
+      width: 670px;
       margin: auto;
       display: block;
     }
     .footer.mobile {
       width: 145px;
+    }
+    .btn, .btn:hover {
+      color: white;
     }
     .mobile { display: none; }
     @media (max-width: 992px) {
@@ -220,72 +221,80 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 </head>
   <body>
-    <header>
-      <img src="images/oppia-logo.png" class="logo desktop" />
-      <img src="images/oppia-nav.png" class=" nav desktop" />
-
-      <img src="images/oppia-logo-mobile.png" class="logo mobile" />
-      <img src="images/oppia-nav-mobile.png" class="nav mobile" />
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 desktop col-sm-3">
-          <img src="images/otter.png" id="otter" />
-        </div>
-        <div class="col-xs-12 col-sm-9 col-md-6 right-container">
-          <h1 class="text-center">Welcome to Oppia</h1>
-          <h2>Our mission is to help anyone learn in an effective and enjoyable way.</h2>
-          
-  	    </div>
-      </div>
-      <div class="jumbotron"> <div class="row">
-		  <div class="col-sm-12 bullet-holder"><h3><b>Oppia</b> is a free online learning tool that enables anyone to easily create and share interactive activities, or lessons, simulating a one-on-one conversation with an intelligent tutor.</h3> </div></div>
-        <div class="row">
-          <div class="col-sm-4 bullet-holder">
-            <div class="row"><img class="bullet" src="images/bullet1icon.svg" /></div>
-			  <div class="row"><h3>Interactive</h3><p>
-Oppia supports learning by doing. A lesson can include embedded code editors, dynamic world maps, and many other options for interaction.</p></div>
-          </div>
-          <div class="col-sm-4 bullet-holder">
-            <div class="row"><img class="bullet" src="images/bullet2icon.svg" /></div>
-			  <div class="row"><h3>Bite-sized</h3><p>
-Lessons are easy to create and quick to play. They can be published in the Library, shared on social media, or embedded on your webpage.</p></div>
-          </div>
-          <div class="col-sm-4 bullet-holder">
-            <div class="row"><img class="bullet" src="images/bullet3icon.svg" /></div>
-			  <div class="row"><h3>Adaptive</h3><p>
-Feedback is an essential part of learning. The branching nature of Oppia allows teachers to respond to mistakes and address misconceptions as learners progress through a lesson.
-
-</p></div>
-          </div>
-        </div>
-      </div>
-      <div class="row oppia-library">
-       
-		  <h2>Imagine what you could learn today...
-
-		  </h2><div class="col-sm-12"><h3>Most Popular Lessons</h3></div></div>
-        <div class="row lesson-container">
-			<div class="col-sm-3"><img src="images/1.png" /></div>
-			<div class="col-sm-3"> <img src="images/2.png" /></div>
-			<div class="col-sm-3"><img src="images/3.png" /></div>
-			<div class="col-sm-3"> <img src="images/4.png" /></div>
-		</div> <div class="row lesson-container">
-			<div class="col-sm-3"><img src="images/1.png" /></div>
-			<div class="col-sm-3"> <img src="images/2.png" /></div>
-			<div class="col-sm-3"><img src="images/3.png" /></div>
-			<div class="col-sm-3"> <img src="images/4.png" /></div>
-		</div>  <div class="row lesson-container"><div class="col-sm-12"> <p><a class="btn btn-primary pull-right" href="https://www.oppia.org/library" role="button">View all Lessons</a></p> </div></div>
-	  </div> 
-    
-	  <div class="oppia-about-extra-info container-fluid"><div class="container"><h2>Share Your Knowledge</h2><h3>Whether you're a K-12 educator, a graduate student, or an individual who's passionate about a specific subject and wants to share your knowledge, Oppia welcomes you. Join the community and start exploring with us.</h3>
-          
-		  <p><a class="btn btn-primary" href="https://www.oppia.org/get_started" role="button">Learn more </a></p></div>
-      
-    </div>
-    <footer>
-      <img src="images/oppia-footer.png" class="footer desktop" />
-      <img src="images/oppia-footer-mobile.png" class="footer mobile" />
-    </footer>
+  	<header>
+  		<img class="logo desktop" src="images/oppia-logo.png"> <img class="nav desktop" src="images/oppia-nav.png"> <img class="logo mobile" src="images/oppia-logo-mobile.png"> <img class="nav mobile" src="images/oppia-nav-mobile.png">
+  	</header>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-4 desktop col-sm-3"><img id="otter" src="images/otter.png"></div>
+  			<div class="col-xs-12 col-sm-9 col-md-6 right-container">
+  				<h1 class="text-center">Welcome to Oppia</h1>
+  				<h2>Our mission is to help anyone learn in an effective and enjoyable way.</h2>
+  			</div>
+  		</div>
+  		<div class="jumbotron">
+  			<div class="row">
+  				<div class="col-sm-12 bullet-holder">
+  					<h3><b>Oppia</b> is a free online learning tool that enables anyone to easily create and share interactive activities, or lessons, simulating a one-on-one conversation with an intelligent tutor.</h3>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-sm-4 bullet-holder">
+  					<div class="row"><img class="bullet" src="images/bullet1icon.svg"></div>
+  					<div class="row">
+  						<h3>Interactive</h3>
+  						<p>Oppia supports learning by doing. A lesson can include embedded code editors, dynamic world maps, and many other options for interaction.</p>
+  					</div>
+  				</div>
+  				<div class="col-sm-4 bullet-holder">
+  					<div class="row"><img class="bullet" src="images/bullet2icon.svg"></div>
+  					<div class="row">
+  						<h3>Bite-sized</h3>
+  						<p>Lessons are easy to create and quick to play. They can be published in the Library, shared on social media, or embedded on your webpage.</p>
+  					</div>
+  				</div>
+  				<div class="col-sm-4 bullet-holder">
+  					<div class="row"><img class="bullet" src="images/bullet3icon.svg"></div>
+  					<div class="row">
+  						<h3>Adaptive</h3>
+  						<p>Feedback is an essential part of learning. The branching nature of Oppia allows teachers to respond to mistakes and address misconceptions as learners progress through a lesson.</p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="row oppia-library">
+  			<h2>Imagine what you could learn today...</h2>
+  			<div class="col-sm-12">
+  				<h3 style="margin: 0 auto 0.25em auto; max-width: 1000px;">Most Popular Lessons</h3>
+  			</div>
+  		</div>
+  		<div class="row lesson-container">
+  			<img src="images/blue1.png">
+  			<img src="images/blue2.png">
+  			<img src="images/blue3.png">
+  			<img src="images/blue4.png">
+        <img src="images/blue5.png">
+  			<img src="images/blue4.png">
+  			<img src="images/blue3.png">
+  			<img src="images/blue1.png">
+        <img src="images/blue5.png">
+  			<img src="images/blue2.png">
+  		</div>
+  		<div class="row lesson-container">
+  			<div class="col-sm-12">
+  				<p><a class="btn pull-right" href="https://www.oppia.org/library" role="button">View all Lessons</a></p>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="oppia-about-extra-info container-fluid">
+  		<div class="container">
+  			<h2>Share Your Knowledge</h2>
+  			<h3>Whether you're a K-12 educator, a graduate student, or an individual who's passionate about a specific subject and wants to share your knowledge, Oppia welcomes you. Join the community and start exploring with us.</h3>
+  			<p><a class="btn" href="https://www.oppia.org/get_started" role="button">Learn more</a></p>
+  		</div>
+  	</div>
+  	<footer>
+  		<img class="footer desktop" src="images/oppia-footer.png"> <img class="footer mobile" src="images/oppia-footer-mobile.png">
+  	</footer>
   </body>
 </html>
