@@ -37,22 +37,20 @@
       margin: 0 10px 10px 0;
       line-height: 1.3;
     }
-	  .jumbotron h3 {
-      font-family: "Rubik", sans-serif;
-      font-size: 1.3em;
-      font-weight: 500;
+	  .jumbotron h2 {
       color: #04857c;
       text-align: center;
-      margin: 0 5px 3px 0;
       line-height: 1.3;
+      font-size: 1.75em;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 750px;
     }
-    .jumbotron h2 {
-      margin-top: 0;
+    .jumbotron h2:last-of-type {
+      margin: 1em auto 0.25em auto;
     }
-	   .container h2 {
-      margin-top: -10px;
-		   color:#04857c;
-		   font-weight:400;
+    .jumbotron {
+      padding-bottom: 1.67em;
     }
     header {
       background: #009688;
@@ -121,26 +119,33 @@
     .oppia-about-extra-info {
       background-color: #009788;
       color: #fff;
-      height: 250px;
       text-align: center;
-		margin-top:20px;
-		max-width:1400px;
+      margin-top: 2em;
+      padding: 2em 0.25em;
     }
-
+    .oppia-about-extra-info .container {
+      max-width: 650px;
+      padding: 0;
+    }
+    .oppia-about-extra-info .container h2 {
+      color: #fff;
+      font-weight: 700;
+      margin: 0;
+    }
+    .oppia-about-extra-info .container h3 {
+      line-height: 1.65em;
+      margin: 0.7em 0;
+    }
 	 .oppia-about-extra-info .btn  {
       background-color: #00796d;
       font-family: "Rubik", Arial, sans-serif;
       font-size: 16px;
-      margin: 0 15px 15px 15px;
       max-width: 90%;
       padding: 12px;
       text-transform: uppercase;
       white-space: normal;
       width: 200px;
       border-radius: 5px;
-      position: relative;
-      top: 70%;
-      transform: translateY(30%);
     }
     .oppia-about-extra-info button:hover {
       background-color: rgba(5,190,178,1)
@@ -232,14 +237,17 @@
   			<div class="col-xs-12 col-sm-9 col-md-6 right-container">
   				<h1 class="text-center">Welcome to Oppia</h1>
   				<h2>Our mission is to help anyone learn in an effective and enjoyable way.</h2>
+          <div class="button-container">
+            <button type="button">Start Learning</button>
+            <button type="button">Share Your Knowledge</button>
+          </div>
   			</div>
   		</div>
   		<div class="jumbotron">
   			<div class="row">
   				<div class="col-sm-12 bullet-holder">
-  					<h2><b>Oppia</b> is a free online learning tool that enables anyone to easily create and share interactive activities, or lessons, simulating a one-on-one conversation with an intelligent tutor.<br>
-  					<br>
-  					Imagine what you could learn today..</h2>
+  					<h2><strong>Oppia</strong> is a free online learning tool that enables anyone to easily create and share interactive activities, or lessons, simulating a one-on-one conversation with an intelligent tutor.</h2>
+            <h2>Imagine what you could learn today&hellip;</h2>
   				</div>
   			</div>
   		</div>
@@ -265,7 +273,7 @@
   		<div class="container">
   			<h2><font color="#FFF">Share Your Knowledge</font></h2>
   			<h3>Whether you're a K-12 educator, a graduate student, or an individual who's passionate about a specific subject and wants to share your knowledge, Oppia welcomes you. Join the community and start exploring with us.</h3>
-  			<p><a class="btn" href="https://www.oppia.org/get_started" role="button">Learn more</a></p>
+  			<a class="btn" href="https://www.oppia.org/get_started" role="button">Learn more</a>
   		</div>
   	</div>
   	<footer>

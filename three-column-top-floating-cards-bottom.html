@@ -43,16 +43,21 @@
       font-weight: 500;
       color: #04857c;
       text-align: center;
-      margin: 0 5px 3px 0;
+      margin: 3px;
       line-height: 1.3;
+    }
+    .jumbotron h3#header-text {
+      font-size: 1.75em;
+      line-height: 1.6;
+      margin: 0 auto 1em auto;
+      max-width: 750px;
     }
     .jumbotron h2 {
       margin-top: 0;
     }
-	   .container h2 {
-      margin-top: -10px;
-		   color:#FFF;
-		   font-weight:400;
+    .jumbotron {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
     header {
       background: #009688;
@@ -107,10 +112,10 @@
     }
     .bullet-holder p {
       padding: 5px 15px;
-		font-size: 1em;
-		color: #024340;
-		text-align:center;
-		font-weight:400;
+  		font-size: 1em;
+  		color: #024340;
+  		text-align:center;
+  		font-weight:400;
     }
     .bullet {
       display: block;
@@ -119,26 +124,33 @@
     .oppia-about-extra-info {
       background-color: #009788;
       color: #fff;
-      height: 250px;
       text-align: center;
-		margin-top:20px;
-		max-width:1400px;
+      margin-top: 2em;
+      padding: 2em 0.25em;
     }
-
+    .oppia-about-extra-info .container {
+      max-width: 650px;
+      padding: 0;
+    }
+    .oppia-about-extra-info .container h2 {
+      color: #fff;
+      font-weight: 700;
+      margin: 0;
+    }
+    .oppia-about-extra-info .container h3 {
+      line-height: 1.65em;
+      margin: 0.7em 0;
+    }
 	 .oppia-about-extra-info .btn  {
       background-color: #00796d;
       font-family: "Rubik", Arial, sans-serif;
       font-size: 16px;
-      margin: 0 15px 15px 15px;
       max-width: 90%;
       padding: 12px;
       text-transform: uppercase;
       white-space: normal;
       width: 200px;
       border-radius: 5px;
-      position: relative;
-      top: 70%;
-      transform: translateY(30%);
     }
     .oppia-about-extra-info button:hover {
       background-color: rgba(5,190,178,1)
@@ -187,6 +199,9 @@
     .btn, .btn:hover {
       color: white;
     }
+    .oppia-library h2 {
+      font-weight: 700;
+    }
     .mobile { display: none; }
     @media (max-width: 992px) {
       #otter {
@@ -230,12 +245,16 @@
   			<div class="col-xs-12 col-sm-9 col-md-6 right-container">
   				<h1 class="text-center">Welcome to Oppia</h1>
   				<h2>Our mission is to help anyone learn in an effective and enjoyable way.</h2>
+          <div class="button-container">
+            <button type="button">Start Learning</button>
+            <button type="button">Share Your Knowledge</button>
+          </div>
   			</div>
   		</div>
   		<div class="jumbotron">
   			<div class="row">
   				<div class="col-sm-12 bullet-holder">
-  					<h3><b>Oppia</b> is a free online learning tool that enables anyone to easily create and share interactive activities, or lessons, simulating a one-on-one conversation with an intelligent tutor.</h3>
+  					<h3 id="header-text"><strong>Oppia</strong> is a free online learning tool that enables anyone to easily create and share interactive activities, or lessons, simulating a one-on-one conversation with an intelligent tutor.</h3>
   				</div>
   			</div>
   			<div class="row">
@@ -282,7 +301,7 @@
   		</div>
   		<div class="row lesson-container">
   			<div class="col-sm-12">
-  				<p><a class="btn pull-right" href="https://www.oppia.org/library" role="button">View all Lessons</a></p>
+  				<p><a class="btn" href="https://www.oppia.org/library" role="button">View all Lessons</a></p>
   			</div>
   		</div>
   	</div>
@@ -290,7 +309,7 @@
   		<div class="container">
   			<h2>Share Your Knowledge</h2>
   			<h3>Whether you're a K-12 educator, a graduate student, or an individual who's passionate about a specific subject and wants to share your knowledge, Oppia welcomes you. Join the community and start exploring with us.</h3>
-  			<p><a class="btn" href="https://www.oppia.org/get_started" role="button">Learn more</a></p>
+  			<a class="btn" href="https://www.oppia.org/get_started" role="button">Learn more</a>
   		</div>
   	</div>
   	<footer>
